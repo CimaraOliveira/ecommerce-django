@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en">
+<head>
+        {% include 'parciais/_head.html' %}
+    <title>{% block titulo %}{% endblock %}E-commerce</title>
+</head>
+<body class="hold-transition layout-top-nav">
+<div class="wrapper">
+
+{% include 'parciais/nav.html' %}
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0"> Top Navigation <small>Example 3.0</small></h1>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+   <main class="container mt-4 mb-4">
+       {% block conteudo %}
+
+       {% endblock %}
+    </main>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+
+{% include 'parciais/footer.html' %}
+</div>
+</div>
+
+
+</body>
+</html>
