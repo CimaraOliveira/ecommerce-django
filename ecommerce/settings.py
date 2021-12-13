@@ -41,9 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'users',
-    'pages',
-    'products',
+
+    'produto',
 ]
 
 MIDDLEWARE = [
@@ -136,8 +135,6 @@ STATICFILES_DIRS = [
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-#user model
-AUTH_USER_MODEL = "users.User"
 
 #pegar foto
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
